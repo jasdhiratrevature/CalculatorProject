@@ -24,3 +24,5 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean package
+    - name: Execute the Jar File
+      run: java -jar target/01CalculatorProject-0.0.1-SNAPSHOT-jar-with-dependencies.jar
